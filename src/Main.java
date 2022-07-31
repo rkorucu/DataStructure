@@ -12,10 +12,7 @@ public class Main {
 
 
        Stack stack=new Stack();
-       stack.push(4);
-        stack.push(5);
-        stack.push(6);
-        stack.push(7);
+
 
         System.out.println(stack.search(4));
         System.out.println(stack.search(9));

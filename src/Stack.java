@@ -27,6 +27,7 @@
    public int pop(){
        if (isEmpty()){
            System.out.println("Stack is empty");
+           return 0;
        }
 
        int fistNumber=peek();  // fist of elements of stack in linkedList
@@ -38,6 +39,7 @@
    public int peek(){
        if (isEmpty()){
            System.out.println("Stack is empty...");
+           return 0;
        }
        return top.val;
 
