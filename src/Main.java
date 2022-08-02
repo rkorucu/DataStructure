@@ -1,3 +1,5 @@
+import java.util.Collection;
+import java.util.Collections;
 
 
 public class Main {
@@ -28,23 +30,32 @@ public class Main {
 //        System.out.println(stack.isEmpty());
 //        System.out.println(stack.size());
 
-        Queue queue=new Queue();
-        queue.enqueue(2);
-        queue.enqueue(3);
-        queue.enqueue(4);
-        queue.enqueue(5);
-        queue.enqueue(6);
-         queue.print();
+//        Queue queue=new Queue();
+//        queue.enqueue(2);
+//        queue.enqueue(3);
+//        queue.enqueue(4);
+//        queue.enqueue(5);
+//        queue.enqueue(6);
+//         queue.print();
+//
+//        System.out.println(queue.isEmpty());
+//
 
-        System.out.println(queue.isEmpty());
+//
+        PriorityQueue  priorityQueue=new PriorityQueue();
 
-
-
-
-
-
-
-
+        priorityQueue.add(4);
+        priorityQueue.add(5);
+        priorityQueue.add(7);
+        priorityQueue.add(9);
+        priorityQueue.add(1);
+        priorityQueue.add(3);
+        priorityQueue.print();
+        System.out.println();
+        priorityQueue.pop();
+        priorityQueue.print();
+        System.out.println();
+        System.out.println(priorityQueue.size());
 
 
     }
