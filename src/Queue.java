@@ -1,6 +1,6 @@
     public class Queue {
        Node front;
-        Node rear;
+       Node rear;
         int queueSize;
 
    public Queue(){
@@ -21,7 +21,6 @@
        queueNode.next=null;
       if(front==null && rear==null){
             rear=front=queueNode;
-          System.out.println("Queue is empty");
           return;
         }
        rear.next=queueNode;

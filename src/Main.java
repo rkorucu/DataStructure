@@ -14,13 +14,14 @@ public class Main {
 //         list.print();
 
 
-//       Stack stack=new Stack();
-//       stack.push(1);
-//       stack.push(2);
-//       stack.push(3);
-//       stack.push(4);
-//       stack.push(5);
-//        System.out.println(stack.size());
+       Stack stack=new Stack();
+       stack.push(1);
+       stack.push(2);
+       stack.push(3);
+       stack.push(4);
+       stack.push(5);
+        System.out.println(stack.peek());
+        System.out.println(stack.size());
 
 //        System.out.println(stack.search(4));
 //        System.out.println(stack.search(9));
@@ -42,20 +43,20 @@ public class Main {
 //
 
 //
-        PriorityQueue  priorityQueue=new PriorityQueue();
-
-        priorityQueue.add(4);
-        priorityQueue.add(5);
-        priorityQueue.add(7);
-        priorityQueue.add(9);
-        priorityQueue.add(1);
-        priorityQueue.add(3);
-        priorityQueue.print();
-        System.out.println();
-        priorityQueue.pop();
-        priorityQueue.print();
-        System.out.println();
-        System.out.println(priorityQueue.size());
+//        PriorityQueue  priorityQueue=new PriorityQueue();
+//
+//        priorityQueue.add(4);
+//        priorityQueue.add(5);
+//        priorityQueue.add(7);
+//        priorityQueue.add(9);
+//        priorityQueue.add(1);
+//        priorityQueue.add(3);
+//        priorityQueue.print();
+//        System.out.println();
+//        priorityQueue.pop();
+//        priorityQueue.print();
+//        System.out.println();
+//        System.out.println(priorityQueue.size());
 
 
     }
