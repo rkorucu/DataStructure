@@ -202,29 +202,7 @@ public class BinarySearchTree {
         postTraverseOrder(root.getRightChild());
         System.out.print(root.getData() + "->");
     }
-    public static void postOrderTraverseIterative(NodeBST root){
 
-        if (root==null){
-            return;
-        }
-        Stack<NodeBST>stack=new Stack<>();
-        stack.push(root);
-
-        Stack<Integer> postOrder=new Stack<>(); // to hold data from postOrder
-        while (!stack.isEmpty()){
-            NodeBST current=stack.pop();
-            postOrder.push(current.getData());
-            if (current.getLeftChild()!=null){
-                stack.push(current.getLeftChild());
-            }
-            if (current.getRightChild()!=null){
-                stack.push(current.getRightChild());
-            }
-            while (!postOrder.isEmpty()){
-                System.out.print(postOrder.pop() + " ");
-            }
-        }
-     }
 
     public void print(NodeBST current) {
         if (current == null) return;
