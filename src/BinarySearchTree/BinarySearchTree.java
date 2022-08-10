@@ -90,7 +90,7 @@ public class BinarySearchTree {
             if (root.getData()==current.getData()){
                 setRoot(null);
                 return true;
-                // Case 2: one child there is
+
             }else if (current.getData()< parent.getData()){
                 parent.setLeftChild(null);
                 return true;
@@ -99,6 +99,7 @@ public class BinarySearchTree {
                 parent.setRightChild(null);
                 return true;
             }
+            //one child there is
         } else if (current.getRightChild() == null) {
             if (root.getData()==current.getData()){
                 setRoot(current.getLeftChild());
@@ -126,7 +127,7 @@ public class BinarySearchTree {
              int temp=findMin.getData();
              delete(temp,root);
              current.setData(temp);
-          return true;
+           return true;
         }
         return true;
     }

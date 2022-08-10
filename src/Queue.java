@@ -10,9 +10,7 @@
 
    }
    public boolean isEmpty(){
-
       return queueSize==0 ;
-
    }
    public void enqueue(int data){
 
@@ -28,21 +26,20 @@
        queueSize++;
 
    }
-   public void  dequeue(){
+   public int  dequeue(){
 
-       if (front==null) return;
+       if (front==null) return 0;
        if (front==rear){
            front=rear=null;
        }
+       int data=front.val;
            front=front.next;
            queueSize--;
-
+     return data;
    }
    public int front(){
        if(isEmpty()) return 0;
-
     return front.val;
-
    }
    public int  queueSize(){
        System.out.println(queueSize);

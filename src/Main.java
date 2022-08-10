@@ -1,7 +1,10 @@
-import java.util.Comparator;
+import java.util.Hashtable;
 
 public class Main {
     public static void main(String[] args) {
+
+
+
         //  LinkedList list=new LinkedList();
 //
 //        list.insertFront(2);
@@ -56,21 +59,43 @@ public class Main {
 //        System.out.println();
 //        System.out.println(priorityQueue.size());
 
+//
+//         PriorityQueueCustom <Person>queueCustom=new PriorityQueueCustom<Person>(new Comparator<Person>() {
+//      @Override
+//      public int compare(Person o1, Person o2) {
+//
+//        return Integer.compare(o1.getAge(),o2.getAge());
+//      }
+//  });
+//
+//      queueCustom.add(new Person("Ramazan","Korucu",23));
+//        queueCustom.add(new Person("Murat","Tuter",27));
+//        queueCustom.add(new Person("Sukru","KIymaci",26));
+//        queueCustom.add(new Person("Mevlut","Ince",23));
+//        queueCustom.print();
+//
+//
+//    }
 
-         PriorityQueueCustom <Person>queueCustom=new PriorityQueueCustom<Person>(new Comparator<Person>() {
-      @Override
-      public int compare(Person o1, Person o2) {
 
-        return Integer.compare(o1.getAge(),o2.getAge());
-      }
-  });
+		HashTable table = new HashTable(); //Create a HashTable
+		//Before Insertion
+		System.out.println("Table Size = " + table.size());
+		table.insert("This",1 ); //Key-Value Pair
+		table.insert("is",2 );
+		table.insert("a",3 );
+		table.insert("Test",4 );
+		table.insert("Driver",5 );
+		System.out.println("Table Size = " + table.size());
+		// first search the key then delete it in the table
+		// see the implementation first
+		System.out.println(table.delete("is")+ " : This key is deleted from table");
+		System.out.println("Now Size of the table = " + table.size() );
+		if(table.isEmpty())
+			System.out.println("Table is Empty");
+		else
+			System.out.println("Table is not Empty");
 
-      queueCustom.add(new Person("Ramazan","Korucu",23));
-        queueCustom.add(new Person("Murat","Tuter",27));
-        queueCustom.add(new Person("Sukru","KIymaci",26));
-        queueCustom.add(new Person("Mevlut","Ince",23));
-        queueCustom.print();
-
-
-    }
+	}
 }
+

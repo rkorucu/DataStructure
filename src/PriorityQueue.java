@@ -1,4 +1,6 @@
-    public class PriorityQueue {
+import java.util.Comparator;
+
+public class PriorityQueue<N> {
         Node head;
         int size;
 
@@ -6,10 +8,10 @@
     public PriorityQueue(){
        head=null;
        size=0;
+
     }
     public boolean isEmpty(){
        return head==null;
-
     }
 
     public  void  add(int item) {
@@ -17,11 +19,10 @@
         Node previous = null;
         Node current = head;
 
-        while (current != null && item > current.val) {
+        while (current != null && item>current.val) {
             previous = current;
             current = current.next;
         }
-
         if (previous == null) {
             newNode.next = head;
             head = newNode;
@@ -31,6 +32,7 @@
         }
         size++;
     }
+
     public int peek(){
         if (!isEmpty()){
             return head.val;
@@ -41,17 +43,15 @@
         if (!isEmpty()){
             int data=head.val;
             head=head.next;
+            size--;
             System.out.println(" Pop data is : " + data);
             return data;
         }
         return -1;
-
     }
-
     public  int size(){
         return size;
     }
-
     public void print(){
             System.out.print("Priority queue is : " );
         Node print=head;

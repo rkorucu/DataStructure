@@ -79,6 +79,7 @@
                 return;
             if(current.val==data){
                 head=head.next;
+                size--;
                 return;
             }
             while (current!=null) {
