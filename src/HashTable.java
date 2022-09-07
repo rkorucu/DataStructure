@@ -45,25 +45,7 @@ import java.util.ArrayList;
         HashNode newSlots=new HashNode(key, data);
         newSlots.next=head;
         buckets.set(hashIndex,newSlots);
-        //If 60% of the array gets filled, double the size
-//        if ((1.0*size)/slots >= 0.6)
-//        {
-//            ArrayList <HashNode> temp = buckets;
-//            buckets = new ArrayList<>();
-//            slots = 2 * slots;
-//            size = 0;
-//            for (int i = 0; i < slots; i++)
-//                buckets.add(null);
-//
-//            for (HashNode head_Node : temp)
-//            {
-//                while (head_Node != null)
-//                {
-//                    insert(head_Node.key, head_Node.value);
-//                    head_Node = head_Node.next;
-//                }
-//            }
-//        }
+
     }
 
     public int delete(String key){
